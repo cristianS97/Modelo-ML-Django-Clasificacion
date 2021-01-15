@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>{{ titulo }}</h1>
+
+    <form action="{% url 'check' %}" method="POST">{% csrf_token %}
+        {{ form.as_p }}
+
+        <input type="submit" value="Iniciar sesión">
+    </form>
+
+    {% if error %}
+        <p>Las credenciales no son las correctas</p>
+    {% endif %}
+{% endblock %}
