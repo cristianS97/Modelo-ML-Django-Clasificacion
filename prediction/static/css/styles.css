@@ -1,0 +1,105 @@
+body {
+    background: #21295c;
+}
+.container {
+    width: 300px;
+    margin: auto;
+    margin-top: 40px;
+    background: #eee5e9;
+    padding: 40px;
+}
+.container_width {
+    width: 90%;
+    height: 80vh;
+}
+hr {
+    height: 2px;
+    background: #e85b2c;
+    border: none;
+}
+h1, h2 {
+    text-align: center;
+    color: #e85b2c;
+    text-transform: uppercase;
+}
+form p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+form p input[type="text"],
+form p input[type="password"],
+form p input[type="number"] {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-size: 30px;
+}
+form .btn {
+    width: 100%;
+    background: #cf5c36;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+form .btn:hover {
+    background: #e85b2c;
+}
+.error {
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(255, 0, 0)
+}
+table {
+    width: 100%;
+    background-color: #ff33cc;
+    border-collapse: collapse;
+    text-align: center;
+}
+thead {
+    background: #e85b2c;
+    text-transform: uppercase;
+}
+tbody tr:nth-child(odd) {
+    background-color: #4f5fc9;
+}
+tbody tr:nth-child(even) {
+    background-color: #202a6b;
+}
+tbody tr {
+    background-image: url(noise.png);
+}
+td {
+    border-style: none;
+    padding: 10px;
+    color: #fff;
+}
+.pagination {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.links {
+    display: flex;
+    justify-content: space-around;
+}
+.link {
+    text-transform: uppercase;
+}
+.pagination a, .link {
+    text-decoration: none;
+    color: #cf5c36;
+    font-weight: bolder;
+}
+.pagination a:hover, .link:hover {
+    color: #e85b2c;
+}

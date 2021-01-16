@@ -3,12 +3,14 @@
 {% block content %}
 	<h1>{{ titulo }}</h1>
 
+	<div class="links">
+		<a href="{% url 'cierre' %}" class="link">Cerrar sesión</a>
+		<a href="{% url 'data' %}" class="link">Data</a>
+	</div>
+
 	<form action="{% url 'result' %}" method='POST'>{% csrf_token %}
 		{{ form.as_p }}
 
-		<input type="submit" name="" value="submit">
+		<input type="submit" name="" value="submit" class="btn">
 	</form>
-
-	<a href="{% url 'cierre' %}">Cerrar sesión</a>
-	<a href="{% url 'data' %}">Data</a>
 {% endblock %}

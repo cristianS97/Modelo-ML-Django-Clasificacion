@@ -6,10 +6,10 @@
     <form action="{% url 'check' %}" method="POST">{% csrf_token %}
         {{ form.as_p }}
 
-        <input type="submit" value="Iniciar sesión">
+        <input type="submit" value="Iniciar sesión" class="btn">
     </form>
 
     {% if error %}
-        <p>Las credenciales no son las correctas</p>
+        <p class="error">Las credenciales no son las correctas</p>
     {% endif %}
 {% endblock %}

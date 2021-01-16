@@ -3,10 +3,12 @@
 {% block content %}
 	<h1>Resultado de la predicción</h1>
 
+	<div class="links">
+		<a href="{% url 'index' %}" class="link">Volver</a>
+		<a href="{% url 'data' %}" class="link">Data</a>
+	</div>
+
 	<p>The data is: {{ data }}</p>
 	<p>The result is: {{ pred.pk }}</p>
 	<p>Yo need <b>{{ pred.glass }}</b></p>
-
-	<a href="{% url 'index' %}">Volver</a>
-	<a href="{% url 'data' %}">Data</a>
 {% endblock %}

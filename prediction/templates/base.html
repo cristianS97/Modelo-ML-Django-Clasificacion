@@ -1,11 +1,19 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-    {% block content %}{% endblock content %}
+    {% if '/data/' in request.get_full_path %}
+        <div class="container container_width">
+    {% else %}
+        <div class="container">
+    {% endif %}
+        {% block content %}{% endblock content %}
+    </div>
 </body>
 </html>
