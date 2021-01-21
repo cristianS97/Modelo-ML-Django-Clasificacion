@@ -7,6 +7,7 @@ from pred.models import InputData
 # Create your views here.
 class DataView(LoginRequiredMixin, ListView):
     template_name = 'datos.html'
+    login_url='/login'
     paginate_by = 10
     model = InputData
     def get_context_data(self, **kwargs):
